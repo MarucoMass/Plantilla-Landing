@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root{
-    --fs-title: clamp(1.15rem, 10vw + .5rem, 1.75rem);
+    --fs-title: clamp(1.15rem, 10vw + .5rem, 2.35rem);
     --fs-secondary-title: clamp(1rem, 10vw + .5rem, 2rem);
     --fs-paragraph: clamp(.85rem, 10vw, 1rem);
 
@@ -51,10 +51,6 @@ img{
     display: block;
     object-fit: cover;
 }
-i{
-    color: var(--color-white);
-    margin-right: 5px;
-}
 .header__container--box{
     width: 90%;
     max-width: 1200px;
@@ -64,9 +60,20 @@ i{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 10px;
+}
+.header__container--box > ul > li{
     color: var(--color-white);
     font-size: .65rem;
-    gap: 10px;
+    font-size: clamp(.35rem, 2vw + .125rem , .75rem)
+
+}
+i:not(.footer__content--social i){
+    margin-right: 5px;
+    background-color: var(--color-white);
+    color: #000;
+    border-radius: 50%;
+    padding: 3px;
 }
 #header__nav > .header__container--box{
     display: flex;
@@ -77,7 +84,7 @@ i{
     padding-block: 1.25rem;
 }
 #header__nav{
-    padding-block: 1.5rem;
+    padding-block: 1.2rem;
     box-shadow: 0 5px 55px rgba(0,0,0,0.15);
     position: sticky;
     top: 0;
@@ -108,15 +115,12 @@ i{
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    /* gap: 20px; */
-    /* padding: 5rem 0 7rem 0; */
     row-gap: 30px;
     column-gap: 100px;
 }
 .form__box{
     padding: 20px;
     border-radius: 8px;
-    /* margin-top: 20px; */
 }
 .form__box > form{
     display: grid;
@@ -144,7 +148,6 @@ form > .btn{
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     gap: 15px;
 }
-
 #call-to-action{
     color: var(--color-white);
     padding-block-start: 12rem;
@@ -153,14 +156,13 @@ form > .btn{
 #producto{
     padding-block-end: 12rem;
 }
-
 .container__image{
     position: relative;
 }
 .container__image img{
-  width: 250px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: 250px; 
   height: 250px;
-  border-radius: 50%; /* Aplica la forma circular */
+  border-radius: 50%; 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -170,7 +172,6 @@ form > .btn{
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
-    padding-top: 36.35%;
     max-width: 1080px;
     margin-inline: auto;
     margin-top: 20px;
@@ -201,8 +202,49 @@ form > .btn{
 .footer__content--social > a > i {
     font-size: 2rem;
     margin-inline: 5px;
+    color: var(--color-white);
 }
+.swiper {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 200px;
+}
+.swiper-slide-shadow-left, .swiper-slide-shadow-right{
+     opacity: 0 !important; 
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  /* .swiper {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px !important;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
 /* utilitarias */
 
 .bg-black{
@@ -235,4 +277,28 @@ form > .btn{
 }
 .pd-container{
     padding-block: 4rem;
+}
+
+@media (min-width:595px) {
+    .hero__content{
+        text-align: left;
+    }
+    .container__image img{
+        width: 350px;
+        height: 350px;
+    }
+    #producto{
+        padding-block-end: 16rem;
+    }
+    #call-to-action{
+        padding-block-start: 14rem;
+    }
+    .swiper-slide {
+        margin-inline: 70px;
+    }
+}
+@media (min-width: 999px){
+    .container__video{
+        padding-top: 40%;
+    }
 }

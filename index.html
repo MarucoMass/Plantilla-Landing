@@ -15,8 +15,8 @@
         <section id="header__info" class="header__container bg-black">
             <div class="header__container--box">
                 <ul>
-                    <li><i class="fa fa-envelope"></i>ventas@gmail.com</li>
-                    <li><i class="fa fa-phone"></i>+5492134123</li>
+                    <li><i class="fa-regular fa-envelope"></i>ventas@gmail.com</li>
+                    <li><i class="fa-regular fa-phone"></i>+5492134123</li>
                     <li><i class="fa fa-whatsapp"></i>+54981261782<li>
                 </ul>
             </div>
@@ -89,7 +89,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora minima suscipit quaerat possimus officia eius deserunt earum maiores, illum hic officiis nulla cum et dolorem accusantium voluptatibus itaque blanditiis exercitationem.</p>
                 </div>
 
-                <!-- <div class="swiper mySwiper">
+                <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <img src="assets/client-img1.png" />
@@ -101,8 +101,19 @@
                         <img src="assets/client-img21.png" />
                       </div>
                     </div>
-                </div> -->
-            </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="assets/client-img1.png" /></div>
+                      <div class="swiper-slide"><img src="assets/client-img1.png" /></div>
+                      <div class="swiper-slide"><img src="assets/client-img1.png" /></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div> -->
         </section>
 
         <section id="contacto" class="bg-grey full-bleed pd-container">
@@ -131,14 +142,14 @@
             <div class="footer__content--info">
                 <div class="column">
                   <ul>
-                    <li><i class="fa fa-envelope"></i>ventas@gmail.com</li>
-                    <li><i class="fa fa-phone"></i>+5492134123</li>
+                    <li><i class="fa-regular fa-envelope"></i>ventas@gmail.com</li>
+                    <li><i class="fa-regular fa-phone"></i>+5492134123</li>
                   </ul>
                 </div>
                 <div class="column">
                   <ul>
                     <li><i class="fa fa-whatsapp"></i>+54981261782</li>
-                    <li><i class="fa fa-location-dot"></i>Calle X 1234, Rosario, St Fe, Arg.</li>
+                    <li><i class="fa-regular fa-location-dot"></i>Calle X 1234, Rosario, St Fe, Arg.</li>
                   </ul>
                 </div>
               </div>
@@ -162,14 +173,26 @@
           coverflowEffect: {
             rotate: 10,
             stretch: 0,
-            depth: 1000,
+            depth: 1500,
             modifier: 1,
             slideShadows: true,
           },
           pagination: {
             el: ".swiper-pagination",
           },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         });
       </script>
+      <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script> -->
 </body>
 </html>
