@@ -225,12 +225,16 @@ form > .btn{
     font-size: 2rem;
     margin-inline: 5px;
     color: var(--color-white);
+    transition: color .65s ease;
+}
+.footer__content--social > a > i:hover{
+    color: var(--color-primary);
 }
 .swiper {
     width: 100%;
     margin-top: 20px;
   }
-  .swiper-slide {
+.swiper-slide {
     background-position: center;
     background-size: cover;
     max-width: 200px;
@@ -238,7 +242,7 @@ form > .btn{
 .swiper-slide-shadow-left, .swiper-slide-shadow-right{
      opacity: 0 !important; 
   }
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
   }
@@ -325,5 +329,8 @@ form > .btn{
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+    }
+    #footer{
+        padding: 2rem 0 5rem 0;
     }
 }
