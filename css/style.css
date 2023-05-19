@@ -102,7 +102,7 @@ i:not(.footer__content--social i){
 }
 #hero{
     position: relative;
-    background: url('/assets/photoholgic-BmoqhFTwdvc-unsplash.jpg') center center / cover no-repeat;
+    background: url('../assets/photoholgic-BmoqhFTwdvc-unsplash.jpg') center center / cover no-repeat;
     padding: 4rem 0 12rem 0;
     padding: 3rem 0 8rem 0;
     z-index: 1;
